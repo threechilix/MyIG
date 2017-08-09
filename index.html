@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<title>My Instagram Gallery</title>
+		<link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"/>
+		<!-- Custom style my instagram gallery -->
+		<link type="text/css" rel="stylesheet" href="/my-instagram-gallery.css" />
+	</head>
+	<body>
+		<div class="demo"></div>
+		<!-- Include jQuery -->
+		<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+		<!-- jQuery my instagram gallery -->
+		<script src="my-instagram-gallery.js"></script>
+		<script>
+		$(document).ready(function(){
+			$(".demo").myig(
+				ins_id = 5679850968, // your user_id
+				ins_count = 10, // Count of media to return
+				ins_token = '5679850968.ba4c844.fa335474e117456ca6e470b28dd36f77' // your token
+			);
+		});
+		</script>
+		<!-- Include fancybox library -->
+		<link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"/>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+		<script>
+		$(document).ready(function(){	
+			$(".myig_popup").fancybox({
+				openEffect : 'fade',
+				closeEffect : 'fade'
+			});
+		});
+		</script>	
+	</body>
+</html>
